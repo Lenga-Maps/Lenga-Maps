@@ -1,0 +1,10 @@
+# HOW DOWNLOADS ARE BEING FACILITATED ON LENGA MAPS WEBSITE
+
+## Problem Statement
+GIS files are being stored on google drive, and because of this, each download link has to be a google drive link. However when a user clicks on any of the links, they're redirected to our google drive storage, instead of triggering an immediate download.
+
+## Steps to Solve This Problem
+1. Copy google drive file link
+2. from the link, copy all characters in-between "/d/" and "/view". That's called the file ID of that particular file
+3. Paste the mentioned file ID at the end of the following line (no spaces): https://drive.google.com/uc?export=download&id=
+4. This new link will cause the data to be downloaded automatically and directly once put on the Lenga Maps Web, without any redirections
